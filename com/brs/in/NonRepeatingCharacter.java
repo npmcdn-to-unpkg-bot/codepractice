@@ -6,10 +6,14 @@ import java.util.Map;
 
 public class NonRepeatingCharacter {
 
-    private Map<Character, Integer> countMap = new LinkedHashMap<>();
+private Map<Character, Integer> countMap = new LinkedHashMap<>();
     private String word;
 
     public NonRepeat(String word) {
+        if (word == null || "".equals(word.trim())) {
+            //Nothing to find
+            throw new IllegalArgumentException("Word can't be null");
+        }
         this.word = word;
     }
 
