@@ -4,7 +4,7 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 
-public class NonRepeat {
+public class NonRepeatingCharacter {
 
     private Map<Character, Integer> countMap = new LinkedHashMap<>();
     private String word;
